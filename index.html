@@ -4,136 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Your Name</title>
-    <style>
-body {
-    margin: 0;
-    padding: 0;
-    background-image: url('./assets/background.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: 'Montserrat', sans-serif;
-    background-attachment: fixed;
-}
-
-.container {
-    width: 60%;
-    margin: 50px auto;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.navbar {
-    background-color: #000;
-    padding: 10px 0;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    position: relative;
-}
-
-.navbar a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    margin: 0 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.navbar a:hover {
-    background-color: #712c2f;
-}
-
-.content {
-    background-color: rgba(255, 255, 255, 0.5);
-    overflow: auto;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding: 20px;
-}
-
-.square {
-    width: 100%;
-    height: 600px;
-    box-sizing: border-box;
-    text-align: left;
-    display: none;
-}
-
-.active {
-    display: block;
-}
-
-.circle-icon {
-    position: absolute;
-    top: 50%;
-    right: 5px;
-    transform: translateY(-50%);
-    color: #ef6860;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.circle-icon2 {
-    position: absolute;
-    top: 50%;
-    right: 25px;
-    transform: translateY(-50%);
-    color: #ebc12b;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.circle-icon3 {
-    position: absolute;
-    top: 50%;
-    right: 45px;
-    transform: translateY(-50%);
-    color: #37c54b;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.navbar2 {
-    display: none;
-}
-
-@media only screen and (max-width: 768px) {
-    .navbar2 {
-        background-color: #000;
-        padding: 2px 0;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        position: relative;
-    }
-    .navbar2 a {
-        color: #fff;
-        text-decoration: none;
-        margin: 0 5px;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 16px;
-    }
-    .navbar2 a:hover {
-        background-color: #712c2f;
-    }
-    .navbar {
-        display: none;
-    }
-    .navbar2 {
-        display: block;
-    }
-    .navbar2.icons-only a i {
-        font-size: 14px;
-        color: white;
-        padding: 10px;
-    }
-}
-    </style>
+    
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
+
+    <style>
+	    	
+	body {
+	    margin: 0;
+	    padding: 0;
+	    background-image: url('./assets/background.jpeg');
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    font-family: 'Montserrat', sans-serif;
+	    background-attachment: fixed;
+	}
+
+	.container {
+	    width: 60%;
+	    margin: 50px auto;
+	    border-radius: 10px;
+	    overflow: hidden;
+	}
+
+	.navbar {
+	    background-color: #000;
+	    padding: 10px 0;
+	    border-top-left-radius: 10px;
+	    border-top-right-radius: 10px;
+	    position: relative;
+	}
+
+	.navbar a {
+	    color: #fff;
+	    text-decoration: none;
+	    padding: 10px 20px;
+	    margin: 0 10px;
+	    border-radius: 5px;
+	    cursor: pointer;
+	    font-size: 16px;
+	}
+
+	.navbar a:hover {
+	    background-color: #712c2f;
+	}
+
+	.content {
+	    background-color: rgba(255, 255, 255, 0.5);
+	    overflow: auto;
+	    border-bottom-left-radius: 10px;
+	    border-bottom-right-radius: 10px;
+	    padding: 20px;
+	}
+
+	.square {
+	    width: 100%;
+	    height: 600px;
+	    box-sizing: border-box;
+	    text-align: left;
+	    display: none;
+	}
+
+	.active {
+	    display: block;
+	}
+
+	.circle-icon {
+	    position: absolute;
+	    top: 50%;
+	    right: 5px;
+	    transform: translateY(-50%);
+	    color: #ef6860;
+	    font-size: 15px;
+	    cursor: pointer;
+	}
+
+	.circle-icon2 {
+	    position: absolute;
+	    top: 50%;
+	    right: 25px;
+	    transform: translateY(-50%);
+	    color: #ebc12b;
+	    font-size: 15px;
+	    cursor: pointer;
+	}
+
+	.circle-icon3 {
+	    position: absolute;
+	    top: 50%;
+	    right: 45px;
+	    transform: translateY(-50%);
+	    color: #37c54b;
+	    font-size: 15px;
+	    cursor: pointer;
+	}
+
+	.navbar2 {
+	    display: none;
+	}
+
+	@media only screen and (max-width: 768px) {
+	    .container {
+	    width: 80%;
+	    margin: 50px auto;
+	    }
+	    
+	    .navbar2 {
+		background-color: #000;
+		padding: 2px 0;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		position: relative;
+	    }
+	    .navbar2 a {
+		color: #fff;
+		text-decoration: none;
+		margin: 0 5px;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 16px;
+	    }
+	    .navbar2 a:hover {
+		background-color: #712c2f;
+	    }
+	    .navbar {
+		display: none;
+	    }
+	    .navbar2 {
+		display: block;
+	    }
+	    .navbar2.icons-only a i {
+		font-size: 14px;
+		color: white;
+		padding: 10px;
+	    }
+	}
+    </style>
     <div class="container">
         <div class="navbar">
             <a href="#" onclick="mostrarSeccion('home')"><i class="fas fa-home"></i> Home</a>
